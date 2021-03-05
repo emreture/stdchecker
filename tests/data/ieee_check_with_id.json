@@ -1,0 +1,98 @@
+[
+  {
+    "query": "C57.104",
+    "error": null,
+    "no": "IEEE C57.104",
+    "rev": "2019",
+    "desc": "IEEE Guide for the Interpretation of Gases Generated in Mineral Oil-Immersed Transformers",
+    "body": "ieee",
+    "url": "https://standards.ieee.org/content/ieee-standards/en/standard/C57_104-2019.html",
+    "check": false,
+    "actual": "2010",
+    "id": 0
+  },
+  {
+    "query": "C57.106",
+    "error": null,
+    "no": "IEEE C57.106",
+    "rev": "2015",
+    "desc": "IEEE Guide for Acceptance and Maintenance of Insulating Mineral Oil in Electrical Equipment",
+    "body": "ieee",
+    "url": "https://standards.ieee.org/standard/C57_106-2015.html",
+    "check": true,
+    "actual": "2015",
+    "id": 1
+  },
+  {
+    "query": "C57.147",
+    "error": null,
+    "no": "IEEE C57.147",
+    "rev": "2018",
+    "desc": "IEEE Guide for Acceptance and Maintenance of Natural Ester Insulating Liquid in Transformers",
+    "body": "ieee",
+    "url": "https://standards.ieee.org/standard/C57_147-2018.html",
+    "check": true,
+    "actual": "2018",
+    "id": 2
+  },
+  {
+    "query": "C57.12.90",
+    "error": null,
+    "no": "IEEE C57.12.90/Cor 1",
+    "rev": "2015/Cor 1-2017",
+    "desc": "IEEE Standard Test Code for Liquid-Immersed Distribution, Power, and Regulating Transformers Corrigendum 1:Editorial and Technical Corrections",
+    "body": "ieee",
+    "url": "https://standards.ieee.org/standard/C57_12_90-2015-Cor1-2017.html",
+    "actual": "Yok",
+    "check": false,
+    "id": null
+  },
+  {
+    "query": "C57.12.90",
+    "error": null,
+    "no": "IEEE C57.12.90",
+    "rev": "2015",
+    "desc": "IEEE Standard Test Code for Liquid-Immersed Distribution, Power, and Regulating Transformers",
+    "body": "ieee",
+    "url": "https://standards.ieee.org/standard/C57_12_90-2015.html",
+    "check": true,
+    "actual": "2015",
+    "id": 3
+  },
+  {
+    "query": "C57.152",
+    "error": null,
+    "no": "IEEE C57.152",
+    "rev": "2013",
+    "desc": "IEEE Guide for Diagnostic Field Testing of Fluid-Filled Power Transformers, Regulators, andReactors",
+    "body": "ieee",
+    "url": "https://standards.ieee.org/standard/C57_152-2013.html",
+    "check": true,
+    "actual": "2013",
+    "id": 4
+  },
+  {
+    "query": "C57.161",
+    "error": null,
+    "no": "IEEE C57.161",
+    "rev": "2018",
+    "desc": "IEEE Guide for Dielectric Frequency Response Test",
+    "body": "ieee",
+    "url": "https://standards.ieee.org/standard/C57_161-2018.html",
+    "check": true,
+    "actual": "2018",
+    "id": 5
+  },
+  {
+    "query": "C57.21",
+    "error": null,
+    "no": "IEEE C57.21",
+    "rev": "2008",
+    "desc": "IEEE Standard Requirements, Terminology, and Test Code for Shunt Reactors Rated Over 500 kVA",
+    "body": "ieee",
+    "url": "https://standards.ieee.org/standard/C57_21-2008.html",
+    "check": true,
+    "actual": "2008",
+    "id": 6
+  }
+]

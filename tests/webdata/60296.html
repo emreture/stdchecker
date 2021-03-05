@@ -1,0 +1,88 @@
+<html>
+<head>
+</head>
+<body text="#000000">
+
+<style>
+	.highlight {
+		    background-color: #ddf0ff;
+    color: #0060aa;
+    text-shadow: none;
+	}
+	.bold {
+	font-weight: bold;
+	}
+.blue {
+color: blue;
+	}
+</style>
+<script>
+	$(document).ready(function(){
+		try {
+
+			var k = $(".search-query").val().trim();
+
+			if (k == '') {k = $("#search-inputsearch").val().trim();}
+			} catch(e){
+			//IE8
+			var k = $.trim($(".search-query").val());
+			if (k == '') {k = $(".search-query").val().trim();}
+			}
+ 		var element = k.split(" ");
+
+		for (var i = 0; i < k.length; i++) {
+			if (	element[i] != undefined) {					
+				//console.log(i+" - " + element[i]);
+				var word = element[i].replace('"','');
+				var regexp=/\*/g;
+				var match = regexp.exec(word);
+
+
+				word = element[i].replace('*','')
+
+	       		$(".search-results").highlight(word,{ wordsOnly: !match });
+				$("#wr.search-results").highlight(word,{ wordsOnly: !match });
+				$("#trf.search-results").highlight(word,{ wordsOnly: !match });
+				} 
+	       	}
+	});
+		</script>
+
+<input id="nbres" type="hidden"  value="5">
+<ul class="search-results lined-list">
+<li>
+
+<a href="/publication/61025">IEC 60296:2020&nbsp;&nbsp;</a>
+
+<br>Fluids for electrotechnical applications &#8211; Mineral insulating oils for electrical equipment</li>
+
+<li>
+
+<a href="/publication/1032">IEC 60214-1:2014&nbsp;&nbsp;</a>
+
+<br>Tap-changers - Part 1: Performance requirements and test methods</li>
+
+<li>
+
+<a href="/publication/2110">IEC 60422:2013&nbsp;&nbsp;</a>
+
+<br>Mineral insulating oils in electrical equipment - Supervision and maintenance guidance  </li>
+
+<li>
+
+<a href="/publication/29435">IEC 61125:2018&nbsp;&nbsp;</a>
+
+<br>Insulating liquids - Test methods for oxidation stability - Test method for evaluating the oxidation stability of insulating liquids in the delivered state</li>
+
+<li>
+
+<a href="/publication/5476">IEC TS 61464:1998&nbsp;&nbsp;</a>
+
+<br>Insulated bushings - Guide for the interpretation of dissolved gas analysis (DGA) in bushings where oil is the impregating medium of the main insulation (generally paper)</li>
+
+</ul>
+<div class="pagination pagination-centered">
+				<ul><li class="active"><a href="#" Title="Current page">1</a></li></ul>
+		   </div>
+</body>
+</html>

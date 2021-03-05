@@ -1,0 +1,25 @@
+import setuptools
+
+with open("README", "r") as fh:
+    long_description = fh.read()
+
+setuptools.setup(
+    name="stdchecker",
+    version="0.1.0",
+    author="Metin Emre TÜRE",
+    author_email="emre@emreture.net.tr",
+    description="A library for checking the latest revisions of standard methods published by standard bodies.",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/emreture/stdchecker",
+    packages=setuptools.find_packages(),
+    classifiers=[
+        "Development Status :: 5 - Production/Stable",
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3.8",
+        "Operating System :: OS Independent",
+        "Intended Audience :: Science/Research",
+        "Natural Language :: English",
+    ],
+    python_requires='>=3.8',
+)

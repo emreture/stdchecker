@@ -1,0 +1,617 @@
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1"><title>
+	Standard Arama
+</title><link href="../../CSS/main.css" rel="stylesheet" type="text/css" /><link href="../../CSS/ArgemModalPopUp.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="../../JS/Genel/Genel.js"></script>
+
+    <script type="text/javascript" src="../../JS/Genel/ArgemModalPopUp.js"></script>
+
+    <script src="../../JS/Genel/jquery-1.4.2.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">        GrvMouseOverOutAyarla();</script>
+
+<link id="ArgemButtonCSS" href="/WebResource.axd?d=pJPtys5wHEks28vKUnBurQfJLYW_2e64DOr5xvmaPh6mlsrL6u09S7yci0UvP7XkYuyBoCNubVZU75WQdHn6nQq1SSM9g4C3TV7r7r3wn5qyTkf7gSCOSWgmDXcxu3M1ZeZH3TEUEwW50xxPyUgWeg2&amp;t=636349516217205376" type="text/css" rel="stylesheet" /></head>
+<body id="MasterBody" style="text-align: center">
+    <form method="post" action="./StandardAra.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTEwNTYwMTgzOA8WBB4SQWt0aWZTZWxlY3RlZEluZGV4Av////8PHg5Ba3RpZlBhZ2VJbmRleGYWAmYPZBYCAgMPZBYCAgEPZBYKAgMPDxYCHgdUb29sVGlwBQ5TdGFuZGFyZCBBcmFtYWRkAgUPDxYCHwIFEkfDvHZlbmxpIMOHxLFrxLHFn2RkAgsPDxYCHgRUZXh0BQ5TdGFuZGFyZCBBcmFtYWRkAg0PDxYCHgdWaXNpYmxlaGRkAg8PZBYKAgEPFgIfA2VkAgUPZBYCAgEPFgIfBGcWCmYPZBYEAgEPZBYGAgMPEA8WAh8DBQZHZcOnZW5kZGRkAgUPEA8WAh8DBQlCYcWfbGF5YW5kZGRkAgcPEA8WAh8DBQVFxZ9pdGRkZGQCAw9kFgICAQ8QDxYGHg5EYXRhVmFsdWVGaWVsZAUGTG9va05vHg1EYXRhVGV4dEZpZWxkBQZVenVuQWQeC18hRGF0YUJvdW5kZ2QQFQ4LU2XDp2luaXouLi4OQWRhcHRlIFRla2xpZmkCREMFS2l0YXAMS29udSBUZWtsaWZpBktyaXRlchhLcml0ZXIgxLDFnyBQcm9ncmFtxLFuZGERS3JpdGVyIFRhc2FyxLFzxLEOS3JpdGVyIFRla2xpZmkCU1QFVEQqR0QFVFIqVFMUVVRPIFJlaGJlciBEw7Zrw7xtYW4WV0kgKMSwxZ8gUHJvZ3JhbcSxbmRhKRUOATACMTMBMwIxNAE4ATkCMTECMTICMTABMQEyATYCMTUBNRQrAw5nZ2dnZ2dnZ2dnZ2dnZ2RkAgMPZBYCAgMPZBYCAgEPEA8WBh8FBQZMb29rTm8fBgUGVXp1bkFkHwdnZBAVCQtTZcOnaW5pei4uLgEtLUEgKFRhZGlsIEfDtnJtw7zFnyBTdGFuZGFyZC9BbWVuZGVkIHN0YW5kYXJkKS9IICjEsHB0YWwgRWRpbG1pxZ8gU3RhbmRhcmQvV2l0aGRyYXduIHN0YW5kYXJkKR5OIChZZW5pIFN0YW5kYXJkL05ldyBzdGFuZGFyZCklVSAoWcO8csO8cmzDvGt0ZWtpIFN0YW5kYXJkL1N0YW5kYXJkKTJXIChZZW5pIMSwcHRhbCBFZGlsZW4gU3RhbmRhcmQvV2l0aGRyYXduIHN0YW5kYXJkKQ9BIHZleWEgTiB2ZXlhIFUISCB2ZXlhIFcVCQEwAjU1AjUzAjUxAjUwAjUyAjU0C0F2ZXlhTnZleWFVBkh2ZXlhVxQrAwlnZ2dnZ2dnZ2dkZAIED2QWAgIBD2QWAgIBDxAPFgYfBQUHR3J1cEtleR8GBQZHcnVwQWQfB2dkEBWXAQtTZcOnaW5pei4uLjJBa3JlZGl0YXN5b24gdmUgQmVsZ2VsZW5kaXJtZSDDlnplbCBEYWltaSBLb21pdGVzaSNBbMSxY8SxIE9ydGFtIMOWemVsIERhaW1pIEtvbWl0ZXNpICBBbWJhbGFqIMOWemVsIERhaW1pIEtvbWl0ZXNpw5ZESytBbWJhbGFqIHZlIEvEsXJ0YXNpeWUgw5Z6ZWwgRGFpbWkgS29taXRlc2kgHkF0xLFrbGFyIMOWemVsIERhaW1pIEtvbWl0ZXNpIDFBeWTEsW5sYXRtYSB2ZSDEsMOnIFRlc2lzYXQgw5Z6ZWwgRGFpbWkgS29taXRlc2kgKkF5ZMSxbmxhdG1hIHZlIEthYmxvIMOWemVsIERhaW1pIEtvbWl0ZXNpIChCYXPEsW7Dp2zEsSBLYXBsYXIgw5Z6ZWwgRGFpbWkgS29taXRlc2kgMEJpbGdpIFRla25vbG9qaWxlcmkgdmUgxLBsZXRpxZ9pbSDEsGh0aXNhcyBHcnVidTNCaWxpxZ9pbSBUZWtub2xvamlsZXJpIFRlc3QgQmVsZ2VsZW5kaXJtZSBTZWt0w7Zyw7w2Q2FtIFNlcmFtaWsgdmUgUmVmcmFrdGVyIE1hbHplbWUgw5Z6ZWwgRGFpbWkgS29taXRlc2kgFcOHZXZyZSDEsGh0aXNhcyBHcnVidSjDh2V2cmUgU2HEn2zEscSfxLEgw5Z6ZWwgRGFpbWkgS29taXRlc2kgNMOHZXZyZSBTYcSfbMSxxJ/EsSB2ZSBBdMSxa2xhciDDlnplbCBEYWltaSBLb21pdGVzaSAeRGVtaXJ5b2x1IMOWemVsIERhaW1pIEtvbWl0ZXNpHERlcHJlbSDDlnplbCBEYWltaSBLb21pdGVzaSAfRG/En2FsIEdheiDDlnplbCBEYWltaSBLb21pdGVzaRpEb2vDvG1hbiBUZXJjw7xtZSBLb21pdGVzaS9Fa29sb2ppIFRhcsSxbSDDnHLDvG5sZXJpIMOWemVsIERhaW1pIEtvbWl0ZXNpIBdFbGVrdHJpayDEsGh0aXNhcyBHcnVidRlFbGVrdHJvbmlrIMSwaHRpc2FzIEdydWJ1LEVsZWt0cm90ZWtuaWsgR8O8dmVubGlrIMOWemVsIERhaW1pIEtvbWl0ZXNpPEVsZWt0cm90ZWtuaWsgR8O8dmVubGlrIHZlIEF5ZMSxbmxhdG1hICDDlnplbCBEYWltaSBLb21pdGVzaSZFbGVrdHJvdGVrbmlrIFNla3TDtnLDvCBNw7xkw7xybMO8xJ/DvCVFTVUgdmUgUmFkeW8tVFYgw5Z6ZWwgRGFpbWkgS29taXRlc2kgKkVuZMO8c3RyaXllbCBZYcSfbGFyIMOWemVsIERhaW1pIEtvbWl0ZXNpIB5HxLFkYSBTZWt0w7Zyw7wgTcO8ZMO8cmzDvMSfw7wiSGVsYWwgR8SxZGEgU2VrdMO2ciBNw7xkw7xybMO8xJ/DvCNIaXptZXQgU3RhbmRhcmRsYXLEsSDEsGh0aXNhcyBHcnVidTBIaXptZXQgWWVyaSBCZWxnZWxlbmRpcm1lIFNla3TDtnIgTcO8ZMO8cmzDvMSfw7waSXPEsSDDlnplbCBEYWltaSBLb21pdGVzaSAXxLBuxZ9hYXQgxLBodGlzYXMgR3J1YnUqxLBuxZ9hYXQgTWFraW5hbGFyxLEgw5Z6ZWwgRGFpbWkgS29taXRlc2kgG0thYmxvIMOWemVsIERhaW1pIEtvbWl0ZXNpIB9LYXBhdMSxbGFuIEhhesSxcmzEsWsgR3J1cGxhcsSxMkthcGF0xLFsYW4gdmUgQmlybGXFn3RpcmlsZW4gw5Z6ZWwgRGFpbWkgS29taXRlbGVyN0vEsXJ0YXNpeWUgTWFsemVtZWxlcmkgdmUgRm9ybWxhciDDlnplbCBEYWltaSBLb21pdGVzaSAUS2lteWEgxLBodGlzYXMgR3J1YnUcS2lteWEgU2VrdMO2ciBNw7xkw7xybMO8xJ/DvCBMYWJvcmF0dXZhcmxhciBIYXrEsXJsxLFrIEdydWJ1IBRNYWRlbiDEsGh0aXNhcyBHcnVidRVNYWtpbmEgxLBodGlzYXMgR3J1YnUfTWFraW5lIFNla3TDtnLDvCBNw7xkw7xybMO8xJ/DvB1NYW11bCBHxLFkYWxhciDEsGh0aXNhcyBHcnVidSNNZXNsZWsgU3RhbmRhcmRsYXLEsSDEsGh0aXNhcyBHcnVidRlNZXRhbHVyamkgxLBodGlzYXMgR3J1YnUgME1pbGxldGxlcmFyYXPEsSBTdGFuZGFyZGxhciDDlnplbCBEYWltaSBLb21pdGVzaSVNaWxsaSBTYXZ1bm1hIFNhbmF5aWkgxLBodGlzYXMgR3J1YnUgJk3DvGhlbmRpc2xpayBIaXptZXRsZXJpIMSwaHRpc2FzIEdydWJ1IU5CQyB2ZSBLxLBTIMOWemVsIERhaW1pIEtvbWl0ZXNpIB5Ow7xrbGVlciDDlnplbCBEYWltaSBLb21pdGVzaSAoT3B0aWsgdmUgT3B0b21ldHJpIMOWemVsIERhaW1pIEtvbWl0ZXNpIChPcm1hbiB2ZSBPcm1hbiDDnHLDvG5sZXJpIMSwaHRpc2FzIEdydWJ1HU90b21vdGl2IMOWemVsIERhaW1pIEtvbWl0ZXNpH090b21vdGl2IFNla3TDtnIgTcO8ZMO8cmzDvMSfw7w2T3RvbW90aXYgdmUgxLBuxZ9hYXQgTWFraW5hbGFyxLEgw5Z6ZWwgRGFpbWkgS29taXRlc2kgI8OWemVsIFN0YW5kYXJkbGFyIEhhesSxcmzEsWsgR3J1YnUgGVBldHJva2lteWEgxLBodGlzYXMgR3J1YnUVUGV0cm9sIMSwaHRpc2FzIEdydWJ1JlBsw6JzdGlrIEJvcnVsYXIgw5Z6ZWwgRGFpbWkgS29taXRlc2kgHVJhZHlvLVRWIMOWemVsIERhaW1pIEtvbWl0ZXNpFFJlemVydiBrb251bGFyIGdydWJ1F1NhxJ9sxLFrIMSwaHRpc2FzIEdydWJ1HlN0YW5kYXJkIMOWemVsIERhaW1pIEtvbWl0ZXNpICfFnmVoaXJpw6dpIFlvbGxhciDDlnplbCBEYWltaSBLb21pdGVzaSAqVGFocmliYXRzxLF6IE11YXllbmUgw5Z6ZWwgRGFpbWkgS29taXRlc2kgMFRhcsSxbSBBbGV0IHZlIE1ha2luYWxhcsSxIMOWemVsIERhaW1pIEtvbWl0ZXNpIAxUZWtuaWsgS3VydWwWVGVrc3RpbCDEsGh0aXNhcyBHcnVidSdUZWxla29tw7xuaWthc3lvbiDDlnplbCBEYWltaSBLb21pdGVzaSAyVGVzaXNhdCB2ZSBCYXPEsW7Dp2zEsSBLYXBsYXIgw5Z6ZWwgRGFpbWkgS29taXRlc2kkVMSxYmJpIENpaGF6bGFyIMOWemVsIERhaW1pIEtvbWl0ZXNpLVRLLTAxOiBCaWxpxZ9pbSBUZWtub2xvamlsZXJpIFRla25payBLb21pdGVzaR1USy0wMjogw4dldnJlIFRla25payBLb21pdGVzaR9USy0wMzogRWxla3RyaWsgVGVrbmlrIEtvbWl0ZXNpIVRLLTA0OiBFbGVrdHJvbmlrIFRla25payBLb21pdGVzaR1USy0wNTogSGl6bWV0IFRla25payBLb21pdGVzaShUSy0wNjogWWV0a2lsaSBTZXJ2aXNsZXIgVGVrbmlrIEtvbWl0ZXNpIVRLLTA3OiBUZXJjw7xtZS0xIFRla25payBLb21pdGVzaSFUSy0wODogVGVyY8O8bWUtMiBUZWtuaWsgS29taXRlc2kfVEstMDk6IMSwbsWfYWF0IFRla25payBLb21pdGVzaStUSzE6IEJpbGnFn2ltIFRla25vbG9qaWxlcmkgVGVrbmlrIEtvbWl0ZXNpHFRLLTEwOiBLaW15YSBUZWtuaWsgS29taXRlc2knVEsxMDogWWFwxLEgTWFsemVtZWxlcmkgVGVrbmlrIEtvbWl0ZXNpHFRLLTExOiBNYWRlbiBUZWtuaWsgS29taXRlc2lIVEsxMTrEsHpvbGFzeW9uLCBLYXBsYW1hIHZlIFlhcmTEsW1jxLEgWWFwxLEgTWFsemVtZWxlcmkgVGVrbmlrIEtvbWl0ZXNpOFRLLTEyOiDEsG1hbGF0IE1ha2luZWxlcmkgdmUgVGFrxLFtbGFyxLEgVGVrbmlrIEtvbWl0ZXNpMlRLMTI6IFlhcMSxIEfDvHZlbmxpxJ9pIHZlIEFrdXN0aWsgVGVrbmlrIEtvbWl0ZXNpNFRLLTEzOiBUZXNpc2F0IHZlIEJhc8SxbsOnbMSxIEthcGxhciBUZWtuaWsgS29taXRlc2knVEsxMzogWWFwxLEgR8O8dmVubGnEn2kgVGVrbmlrIEtvbWl0ZXNpG1RLMTQ6IEtpbXlhIFRla25payBLb21pdGVzaSBUSy0xNDogTWV0YWx1cmppIFRla25payBLb21pdGVzaSZUSy0xNTogR8SxZGEgdmUgWmlyYWF0IFRla25payBLb21pdGVzaSBUSzE1OiBQZXRyb2tpbXlhIFRla25payBLb21pdGVzaS5USy0xNjogTcO8aGVuZGlzbGlrIEhpem1ldGxlcmkgVGVrbmlrIEtvbWl0ZXNpMVRLMTY6IFBldHJvbCB2ZSBQZXRyb2wgw5xyw7xubGVyaSBUZWtuaWsgS29taXRlc2kbVEsxNzogTWFkZW4gVGVrbmlrIEtvbWl0ZXNpMFRLLTE3OiBPcm1hbiB2ZSBPcm1hbiDDnHLDvG5sZXJpIFRla25payBLb21pdGVzaTdUSzE4OiDEsG1hbGF0IE1ha2luZWxlcmkgdmUgVGFrxLFtbGFyxLEgVGVrbmlrIEtvbWl0ZXNpH1RLLTE4OiBTYcSfbMSxayBUZWtuaWsgS29taXRlc2keVEsxOTogT3RvbW90aXYgVGVrbmlrIEtvbWl0ZXNpHlRLLTE5OiBUZWtzdGlsIFRla25payBLb21pdGVzaRtUSzI6IMOHZXZyZSBUZWtuaWsgS29taXRlc2koVEsyMDogTWFraW5lIEfDvHZlbmxpxJ9pIFRla25payBLb21pdGVzaSRUSy0yMDogTWlsbGkgU2F2dW5tYSBUZWtuaWsgS29taXRlc2kcVEstMjE6IEhlbGFsIFRla25payBLb21pdGVzaUFUSzIxOiBUZXNpc2F0LCBJc8SxdG1hLCBTb8SfdXRtYSB2ZSBIYXZhbGFuZMSxcm1hIFRla25payBLb21pdGVzaTNUSzIyOiBUZXNpc2F0IHZlIEJhc8SxbsOnbMSxIEthcGxhciBUZWtuaWsgS29taXRlc2kyVEstMjI6IFVsYcWfxLFtIHZlIFRhxZ/EsW1hY8SxbMSxayBUZWtuaWsgS29taXRlc2kgVEsyMzogTWV0YWzDvHJqaSBUZWtuaWsgS29taXRlc2kbVEsyNDogR8SxZGEgVGVrbmlrIEtvbWl0ZXNpHFRLMjU6IFppcmFhdCBUZWtuaWsgS29taXRlc2k/VEsyNjogS2nFn2lzZWwgS29ydXl1Y3UgdmUgT3l1biBBbGFuxLEgRG9uYW7EsW0gVGVrbmlrIEtvbWl0ZXNpHVRLMjc6IFlhbmfEsW4gVGVrbmlrIEtvbWl0ZXNpHVRLMjg6IEFtYmFsYWogVGVrbmlrIEtvbWl0ZXNpKVRLMjk6IFnDtm5ldGltIFNpc3RlbWxlcmkgVGVrbmlrIEtvbWl0ZXNpOFRLMzogRWxla3RyaWsgRWxla3Ryb3Rla25payB2ZSBHw7x2ZW5saWsgVGVrbmlrIEtvbWl0ZXNpMVRLMzA6IEVuZXJqaSB2ZSBFbmVyamkgU2lzdGVtbGVyaSBUZWtuaWsgS29taXRlc2kvVEszMTogT3JtYW4gdmUgT3JtYW4gw5xyw7xubGVyaSBUZWtuaWsgS29taXRlc2keVEszMjogU2HEn2zEsWsgVGVrbmlrIEtvbWl0ZXNpHVRLMzM6IE1lZGlrYWwgVGVrbmlrIEtvbWl0ZXNpHVRLMzQ6IFRla3N0aWwgVGVrbmlrIEtvbWl0ZXNpP1RLMzU6IEVsZWt0cmlrIHZlIEVsZWt0cm9uaWsgWWV0a2lsaSBTZXJ2aXNsZXJpIFRla25payBLb21pdGVzaSNUSzM2OiBNaWxsaSBTYXZ1bm1hIFRla25payBLb21pdGVzaRtUSzM3OiBIZWxhbCBUZWtuaWsgS29taXRlc2kmVEszODogU29zeWFsIEhpem1ldGxlciBUZWtuaWsgS29taXRlc2lCVEszOTogTWVrYW5payB2ZSBFbGVrdHJvbWVrYW5payBZZXRraWxpIFNlcnZpc2xlcmkgVGVrbmlrIEtvbWl0ZXNpO1RLNDogRWxla3RyaWsgw5xyZXRpbSzEsGxldGltIFZlIERhxJ/EsXTEsW0gVGVrbmlrIEtvbWl0ZXNpH1RLNDA6IERlbWlyeW9sdSBUZWtuaWsgS29taXRlc2kpVEs0MTogVXpheSB2ZSBIYXZhY8SxbMSxayBUZWtuaWsgS29taXRlc2keVEs0MjogTsO8a2xlZXIgVGVrbmlrIEtvbWl0ZXNpIFRLNDM6IFRlcmPDvG1lLTEgVGVrbmlrIEtvbWl0ZXNpIFRLNDQ6IFRlcmPDvG1lLTIgVGVrbmlrIEtvbWl0ZXNpNVRLNDU6IMSwxZ8gU2HEn2zEscSfxLEgdmUgR8O8dmVubGnEn2kgVGVrbmlrIEtvbWl0ZXNpFFRLNDY6IFPDvHMgQml0a2lsZXJpVlRLNTogQXlkxLFubGF0bWEgdmUgQmluYSDEsMOnaSBUZXNpc2xlcmkgxLBsZSBZYXJkxLFtY8SxIERvbmFuxLFtbGFyxLEgVGVrbmlrIEtvbWl0ZXNpQ1RLNjogxLBsZXRrZW5sZXIsIEthYmxvbGFyIFZlIFlhbMSxdMSx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YkdlY2VuBRVjdGwwMCRjcGgxJHJiQmFzbGF5YW4FFWN0bDAwJGNwaDEkcmJCYXNsYXlhbgURY3RsMDAkY3BoMSRyZEVzaXQFEWN0bDAwJGNwaDEkcmRFc2l0BRhjdGwwMCRjcGgxJGdydklzUHJvZ3JhbWkPPCsADAIGFQULU3RhbmRhcmRLZXkIRGlyZWt0aWYEVHNObwZCYXNsaWsJQmFzbGlrRW5nCGZkBRZjdGwwMCRjcGgxJGdydlN0YW5kYXJkDzwrAAwDBhUMC1N0YW5kYXJkS2V5DVN0YW5kYXJkVGlwTm8NWXVydXJsdWtUaXBObw1VeWd1bGFtYVRpcE5vB0dydXBLZXkIRml5YXRLZXkIRGlyZWt0aWYEVHNObwZCYXNsaWsJQmFzbGlrRW5nD1BERkljZXJpa1ZhcllvawhSZW5rbGlNaQcUKwABFCsADAKwuQgCAQI0AuACAqcBAkYyZgABAAAA/////wEAAAAAAAAABAEAAAAfU3lzdGVtLlVuaXR5U2VyaWFsaXphdGlvbkhvbGRlcgMAAAAERGF0YQlVbml0eVR5cGUMQXNzZW1ibHlOYW1lAQABCAoCAAAABgIAAAAACwUPVFMgRU4gSUVDIDYwMjk2BWRBa8SxxZ9rYW5sYXItRWxla3Ryb3Rla25payB1eWd1bGFtYWxhciBpw6dpbiAtIEVsZWt0cmlrbGkgY2loYXpsYXIgacOnaW4gbWluZXJhbCB5YWzEsXTEsW0geWHEn2xhcsSxBVtGbHVpZHMgZm9yIGVsZWN0cm90ZWNobmljYWwgYXBwbGljYXRpb25zIC0gTWluZXJhbCBpbnN1bGF0aW5nIG9pbHMgZm9yIGVsZWN0cmljYWwgZXF1aXBtZW50AQEAAs0ICAIBZE4LQlLB1iIpzmaNjsI946E/NcL5nEb1mFwkIbT09HPO" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=m6WLzo8sObwd2E7JH7J_jHu37KI3tTi_NET-P_ylLrQ_HZJJQiPvmyQdsrVmJ9WsXHI8B65t1r--ZcnaU-11AzqskS7NPIgjAiY1H4sdn6k1&amp;t=637297793819849385" type="text/javascript"></script>
+
+
+<script src="/WebResource.axd?d=fWjN30bCmCcSvIgcVcjjx-Yzz0V4XKhwvJaIRAPmQYssr6WK05Y3QLhM2dYmu_VAvhrp13r-dB8X3CdchGihFUUyT_WSkW8Rxce4cgDBb0SC0N0Wlj9EUzZWdCz8aP6mpxvc92OmO4zwt2ZjJPsKxA2&amp;t=636349516217205376" type="text/javascript"></script>
+<script src="/WebResource.axd?d=JSz7j7aaw4Jzd15YtZpcqOXDeqXawUh0BgIjAVxlXYySI1Xl7YDOs327HBRH9WtoXJvdjrUqsWnR3OPx2qnfBeGjmMvVAkNqNq3WvDdj1dlARo3I8k4FbcexgcFwXS9CVoCEEe868_J9Z4_gbWle8w2&amp;t=636349516217205376" type="text/javascript"></script>
+<script src="/WebResource.axd?d=NMt8c1vUf1Z_DDpT9gVhYcsookvaZM5vWpxO-GMLgUm8lhmILCr3k2jrW-LqJQx4IjkzOQ95nKGR683xuafGfkm06eXMN2GhibCJfiJbX0Jdunb_McuBU3h6Li7AMI443j-4cXDGMdcman99OjcXzA2&amp;t=636349516217205376" type="text/javascript"></script>
+<script src="/WebResource.axd?d=bGjmGCfrKFkRvbR8Z1k24hcFdulXTDV7i0Wd8puNClBLqIfjNnXeAlb3G17VxgrlW4VpYVWjEEIMbsDdJTop1DSpIeDUL-TOUtbHt6rT4zvuuhelcMHT9Yl6J2vtCt5WF4_CV5mjkBj24gDKsbc5Wg2&amp;t=636349516217205376" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=9iPhb-0r8LsnlLgRo4K8Or4hLh-LGIwj58Kfo-84N645qbxU8i64b_u70dbPmiGDNX6aWEs6lDerk3Jq8ShlvilqyGEd3QJXqE1tiPG1kkoT0HB8okarTi_UHwAEKRnKpFS-P3npk8JIJGpDYJC1FARFubMnLIpep02wLUcYLzU1&amp;t=fffffffff75ebe31" type="text/javascript"></script>
+<script src="/WebResource.axd?d=pGZsbhD-tpAyNyDIcTE0L008e9ieSn-96jPISPhUIbp6dbqDBPSThuQPPzNnAMeIszoGkcBEyscgh6eOKBBwhVDuVynLF9zZoaJkSfR87aePpamJfUxHRmG3WXAjijqUDYyHYPRuJThJKebW2NXMsg2&amp;t=636349516217205376" type="text/javascript"></script>
+<script src="/WebResource.axd?d=ldp2tnh96fACWRe2Pys_QmXaPfbJhKi9H3WmWchLeS8GKSeXUBzqiSCjPykCP5fhYwYMHDQDHNgrqU7LQKQ5tGmrYokPkriNvZ_oDoVmSCh3Em8IYtrJRaIPCcUhm7sWs9qb2imFoWaRKg6rh94sJg2&amp;t=636349516217205376" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=cUtHcsAmmS8HocCrNa5i-gurcszz9-_QxE0JpeNTJZt4y9ecfG24Rw2orNWZD3R7lceNkP3wKHQDooQHzJrYi5ma-tpWC00fqY0nrI9JwC-8_aJg239BV1D9phoYEsuI6b-WpggpLEdvy3GeAtTjNhk-LORonuqJH7zsplnYTjC-Eywep1a6vqGZorjR1-7I0&amp;t=ffffffffce034dab" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=mAPcJ0VdaZjwsCKcBkZGGaspolAawahhLXzhdifEOMEk-AwqmukUmZ2Jzv2y2b7RqkjuiC5vefHn3bsG70tUoIy89Fjrre4_D0v-TzIegfuMQ2SNQs4mHUFWFIKJ9xu5QgXyryZB9cyy3XGUDXf1fGjkgrLtFQsZbVTpiCeoL9DqqGMHp88R1EdXHre2M37_0&amp;t=ffffffffce034dab" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="13780D84" />
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$scm1', 'form1', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+    <table class="contentPlceHolder" align="center">
+        <tr>
+            <td class="UstMenuTable" style="width: 85px">
+                <img alt="Logo" src="../../Resim/Menu/TSEAboneUstMenuLogo.png" />
+            </td>
+            <td style="padding: 0px">
+                <table class="UstMenuTable" style="width: 915px" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td style="white-space: nowrap; text-align: right;">
+                            &nbsp;
+                        </td>
+                    </tr>
+                    <tr style="text-align: center">
+                        <td>
+                            <table cellpadding="0" cellspacing="0" style="text-align: center" width="95%">
+                                <tr>
+                                    <td style="width: 600; height: 30px">
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                        <a id="hlStandardAra" title="Standard Arama" href="StandardAra.aspx"><img title="Standard Arama" src="../../Resim/Menu/StdAra.png" alt="Standard Arama" /></a>
+                                    </td>
+                                    <td>
+                                        <input type="image" name="ctl00$imgCikis" id="imgCikis" title="Güvenli Çıkış" src="../../Resim/Menu/Cikis.png" style="cursor: hand" />
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                        Standard Arama
+                                    </td>
+                                    <td>
+                                        Sisteme Giriş
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2" align="left">
+                <span id="lblSayfaBaslik" class="SayfaBaslik" style="color:Navy;">Standard Arama</span>
+            </th>
+        </tr>
+        <tr>
+            <td colspan="2" class="contentPlceHolder" style="text-align: center">
+
+
+
+    <table class="cerceveCizgi">
+        <tr>
+            <td align="center" width="100%">
+
+                <span class="SayfaBaslik">
+
+                </span>
+            </td>
+            <td align="right">
+
+            </td>
+        </tr>
+    </table>
+    <div id="cph1_pnlAra" onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;cph1_lnkAra&#39;)">
+
+        <table id="cph1_tblAramaKriterleri" class="cerceveCizgi">
+		<tr>
+			<td>
+                    TS No :
+                </td>
+			<td>
+                    <table>
+                        <tr>
+                            <td>
+                                <input name="ctl00$cph1$txtTsNo" type="text" value="TS EN IEC 60296" id="cph1_txtTsNo" style="width:300px;" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span style="display:inline-block;border-width:0px;border-style:None;"><input id="cph1_rbGecen" type="radio" name="ctl00$cph1$StdAramaTip" value="rbGecen" checked="checked" /><label for="cph1_rbGecen">Geçen</label></span>
+                                <span style="display:inline-block;border-width:0px;border-style:None;"><input id="cph1_rbBaslayan" type="radio" name="ctl00$cph1$StdAramaTip" value="rbBaslayan" /><label for="cph1_rbBaslayan">Başlayan</label></span>
+                                <span style="display:inline-block;border-width:0px;border-style:None;"><input id="cph1_rdEsit" type="radio" name="ctl00$cph1$StdAramaTip" value="rdEsit" /><label for="cph1_rdEsit">Eşit</label></span>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+			<td>
+                    Doküman Tipi :
+                </td>
+			<td>
+                    <select name="ctl00$cph1$ddlStandardTipNo" id="cph1_ddlStandardTipNo" style="width:300px;">
+				<option selected="selected" value="0">Se&#231;iniz...</option>
+				<option value="13">Adapte Teklifi</option>
+				<option value="3">DC</option>
+				<option value="14">Kitap</option>
+				<option value="8">Konu Teklifi</option>
+				<option value="9">Kriter</option>
+				<option value="11">Kriter İş Programında</option>
+				<option value="12">Kriter Tasarısı</option>
+				<option value="10">Kriter Teklifi</option>
+				<option value="1">ST</option>
+				<option value="2">TD*GD</option>
+				<option value="6">TR*TS</option>
+				<option value="15">UTO Rehber D&#246;k&#252;man</option>
+				<option value="5">WI (İş Programında)</option>
+
+			</select>
+                </td>
+		</tr>
+		<tr>
+			<td>
+                    Başlık :*
+                </td>
+			<td>
+                    <input name="ctl00$cph1$txtBaslik" type="text" id="cph1_txtBaslik" style="width:300px;" />
+                </td>
+			<td>
+                    Başlık (İng) :*
+                </td>
+			<td>
+                    <input name="ctl00$cph1$txtBaslikEng" type="text" id="cph1_txtBaslikEng" style="width:300px;" />
+                </td>
+		</tr>
+		<tr>
+			<td>
+                    Kapsam :
+                </td>
+			<td>
+                    <input name="ctl00$cph1$txtKapsam" type="text" id="cph1_txtKapsam" style="width:300px;" />
+                </td>
+			<td>
+                    Kapsam (İng) :
+                </td>
+			<td>
+                    <input name="ctl00$cph1$txtKapsamEng" type="text" id="cph1_txtKapsamEng" style="width:300px;" />
+                </td>
+		</tr>
+		<tr>
+			<td>
+                    Kaynak :
+                </td>
+			<td>
+                    <input name="ctl00$cph1$txtKaynak" type="text" id="cph1_txtKaynak" style="width:300px;" />
+                </td>
+			<td>
+                    Yürürlük Durumu :
+                </td>
+			<td>
+                    <select name="ctl00$cph1$ddlYururlukTipNo" id="cph1_ddlYururlukTipNo" style="width:300px;">
+				<option selected="selected" value="0">Se&#231;iniz...</option>
+				<option value="55">-</option>
+				<option value="53">A (Tadil G&#246;rm&#252;ş Standard/Amended standard)</option>
+				<option value="51">H (İptal Edilmiş Standard/Withdrawn standard)</option>
+				<option value="50">N (Yeni Standard/New standard)</option>
+				<option value="52">U (Y&#252;r&#252;rl&#252;kteki Standard/Standard)</option>
+				<option value="54">W (Yeni İptal Edilen Standard/Withdrawn standard)</option>
+				<option value="AveyaNveyaU">A veya N veya U</option>
+				<option value="HveyaW">H veya W</option>
+
+			</select>
+                </td>
+		</tr>
+		<tr>
+			<td>
+                    Hazırlık Grubu :
+                </td>
+			<td>
+                    <select name="ctl00$cph1$ddlGrupKey" id="cph1_ddlGrupKey" style="width:300px;">
+				<option selected="selected" value="0">Se&#231;iniz...</option>
+				<option value="106">Akreditasyon ve Belgelendirme &#214;zel Daimi Komitesi</option>
+				<option value="135">Alıcı Ortam &#214;zel Daimi Komitesi </option>
+				<option value="136">Ambalaj &#214;zel Daimi Komitesi&#214;DK</option>
+				<option value="107">Ambalaj ve Kırtasiye &#214;zel Daimi Komitesi </option>
+				<option value="150">Atıklar &#214;zel Daimi Komitesi </option>
+				<option value="4">Aydınlatma ve İ&#231; Tesisat &#214;zel Daimi Komitesi </option>
+				<option value="1742">Aydınlatma ve Kablo &#214;zel Daimi Komitesi </option>
+				<option value="152">Basın&#231;lı Kaplar &#214;zel Daimi Komitesi </option>
+				<option value="97">Bilgi Teknolojileri ve İletişim İhtisas Grubu</option>
+				<option value="2752">Bilişim Teknolojileri Test Belgelendirme Sekt&#246;r&#252;</option>
+				<option value="13">Cam Seramik ve Refrakter Malzeme &#214;zel Daimi Komitesi </option>
+				<option value="28">&#199;evre İhtisas Grubu</option>
+				<option value="151">&#199;evre Sağlığı &#214;zel Daimi Komitesi </option>
+				<option value="2">&#199;evre Sağlığı ve Atıklar &#214;zel Daimi Komitesi </option>
+				<option value="153">Demiryolu &#214;zel Daimi Komitesi</option>
+				<option value="132">Deprem &#214;zel Daimi Komitesi </option>
+				<option value="124">Doğal Gaz &#214;zel Daimi Komitesi</option>
+				<option value="101">Dok&#252;man Terc&#252;me Komitesi</option>
+				<option value="154">Ekoloji Tarım &#220;r&#252;nleri &#214;zel Daimi Komitesi </option>
+				<option value="29">Elektrik İhtisas Grubu</option>
+				<option value="31">Elektronik İhtisas Grubu</option>
+				<option value="1738">Elektroteknik G&#252;venlik &#214;zel Daimi Komitesi</option>
+				<option value="2049">Elektroteknik G&#252;venlik ve Aydınlatma  &#214;zel Daimi Komitesi</option>
+				<option value="2734">Elektroteknik Sekt&#246;r&#252; M&#252;d&#252;rl&#252;ğ&#252;</option>
+				<option value="7">EMU ve Radyo-TV &#214;zel Daimi Komitesi </option>
+				<option value="155">End&#252;striyel Yağlar &#214;zel Daimi Komitesi </option>
+				<option value="2722">Gıda Sekt&#246;r&#252; M&#252;d&#252;rl&#252;ğ&#252;</option>
+				<option value="2724">Helal Gıda Sekt&#246;r M&#252;d&#252;rl&#252;ğ&#252;</option>
+				<option value="32">Hizmet Standardları İhtisas Grubu</option>
+				<option value="2739">Hizmet Yeri Belgelendirme Sekt&#246;r M&#252;d&#252;rl&#252;ğ&#252;</option>
+				<option value="156">Isı &#214;zel Daimi Komitesi </option>
+				<option value="33">İnşaat İhtisas Grubu</option>
+				<option value="157">İnşaat Makinaları &#214;zel Daimi Komitesi </option>
+				<option value="5">Kablo &#214;zel Daimi Komitesi </option>
+				<option value="166">Kapatılan Hazırlık Grupları</option>
+				<option value="130">Kapatılan ve Birleştirilen &#214;zel Daimi Komiteler</option>
+				<option value="158">Kırtasiye Malzemeleri ve Formlar &#214;zel Daimi Komitesi </option>
+				<option value="34">Kimya İhtisas Grubu</option>
+				<option value="2719">Kimya Sekt&#246;r M&#252;d&#252;rl&#252;ğ&#252;</option>
+				<option value="143">Laboratuvarlar Hazırlık Grubu </option>
+				<option value="35">Maden İhtisas Grubu</option>
+				<option value="36">Makina İhtisas Grubu</option>
+				<option value="2720">Makine Sekt&#246;r&#252; M&#252;d&#252;rl&#252;ğ&#252;</option>
+				<option value="37">Mamul Gıdalar İhtisas Grubu</option>
+				<option value="126">Meslek Standardları İhtisas Grubu</option>
+				<option value="127">Metalurji İhtisas Grubu </option>
+				<option value="159">Milletlerarası Standardlar &#214;zel Daimi Komitesi</option>
+				<option value="104">Milli Savunma Sanayii İhtisas Grubu </option>
+				<option value="105">M&#252;hendislik Hizmetleri İhtisas Grubu</option>
+				<option value="217">NBC ve KİS &#214;zel Daimi Komitesi </option>
+				<option value="108">N&#252;kleer &#214;zel Daimi Komitesi </option>
+				<option value="160">Optik ve Optometri &#214;zel Daimi Komitesi </option>
+				<option value="109">Orman ve Orman &#220;r&#252;nleri İhtisas Grubu</option>
+				<option value="161">Otomotiv &#214;zel Daimi Komitesi</option>
+				<option value="2783">Otomotiv Sekt&#246;r M&#252;d&#252;rl&#252;ğ&#252;</option>
+				<option value="123">Otomotiv ve İnşaat Makinaları &#214;zel Daimi Komitesi </option>
+				<option value="146">&#214;zel Standardlar Hazırlık Grubu </option>
+				<option value="110">Petrokimya İhtisas Grubu</option>
+				<option value="112">Petrol İhtisas Grubu</option>
+				<option value="111">Pl&#226;stik Borular &#214;zel Daimi Komitesi </option>
+				<option value="162">Radyo-TV &#214;zel Daimi Komitesi</option>
+				<option value="1779">Rezerv konular grubu</option>
+				<option value="114">Sağlık İhtisas Grubu</option>
+				<option value="119">Standard &#214;zel Daimi Komitesi </option>
+				<option value="163">Şehiri&#231;i Yollar &#214;zel Daimi Komitesi </option>
+				<option value="103">Tahribatsız Muayene &#214;zel Daimi Komitesi </option>
+				<option value="164">Tarım Alet ve Makinaları &#214;zel Daimi Komitesi </option>
+				<option value="167">Teknik Kurul</option>
+				<option value="116">Tekstil İhtisas Grubu</option>
+				<option value="102">Telekom&#252;nikasyon &#214;zel Daimi Komitesi </option>
+				<option value="122">Tesisat ve Basın&#231;lı Kaplar &#214;zel Daimi Komitesi</option>
+				<option value="115">Tıbbi Cihazlar &#214;zel Daimi Komitesi</option>
+				<option value="2828">TK-01: Bilişim Teknolojileri Teknik Komitesi</option>
+				<option value="2830">TK-02: &#199;evre Teknik Komitesi</option>
+				<option value="2832">TK-03: Elektrik Teknik Komitesi</option>
+				<option value="2834">TK-04: Elektronik Teknik Komitesi</option>
+				<option value="2836">TK-05: Hizmet Teknik Komitesi</option>
+				<option value="2838">TK-06: Yetkili Servisler Teknik Komitesi</option>
+				<option value="2840">TK-07: Terc&#252;me-1 Teknik Komitesi</option>
+				<option value="2842">TK-08: Terc&#252;me-2 Teknik Komitesi</option>
+				<option value="2844">TK-09: İnşaat Teknik Komitesi</option>
+				<option value="2532">TK1: Bilişim Teknolojileri Teknik Komitesi</option>
+				<option value="2846">TK-10: Kimya Teknik Komitesi</option>
+				<option value="2549">TK10: Yapı Malzemeleri Teknik Komitesi</option>
+				<option value="2848">TK-11: Maden Teknik Komitesi</option>
+				<option value="2551">TK11:İzolasyon, Kaplama ve Yardımcı Yapı Malzemeleri Teknik Komitesi</option>
+				<option value="2850">TK-12: İmalat Makineleri ve Takımları Teknik Komitesi</option>
+				<option value="2553">TK12: Yapı G&#252;venliği ve Akustik Teknik Komitesi</option>
+				<option value="2852">TK-13: Tesisat ve Basın&#231;lı Kaplar Teknik Komitesi</option>
+				<option value="2555">TK13: Yapı G&#252;venliği Teknik Komitesi</option>
+				<option value="2557">TK14: Kimya Teknik Komitesi</option>
+				<option value="2854">TK-14: Metalurji Teknik Komitesi</option>
+				<option value="2856">TK-15: Gıda ve Ziraat Teknik Komitesi</option>
+				<option value="2559">TK15: Petrokimya Teknik Komitesi</option>
+				<option value="2858">TK-16: M&#252;hendislik Hizmetleri Teknik Komitesi</option>
+				<option value="2560">TK16: Petrol ve Petrol &#220;r&#252;nleri Teknik Komitesi</option>
+				<option value="2562">TK17: Maden Teknik Komitesi</option>
+				<option value="2860">TK-17: Orman ve Orman &#220;r&#252;nleri Teknik Komitesi</option>
+				<option value="2564">TK18: İmalat Makineleri ve Takımları Teknik Komitesi</option>
+				<option value="2862">TK-18: Sağlık Teknik Komitesi</option>
+				<option value="2566">TK19: Otomotiv Teknik Komitesi</option>
+				<option value="2864">TK-19: Tekstil Teknik Komitesi</option>
+				<option value="2533">TK2: &#199;evre Teknik Komitesi</option>
+				<option value="2570">TK20: Makine G&#252;venliği Teknik Komitesi</option>
+				<option value="2866">TK-20: Milli Savunma Teknik Komitesi</option>
+				<option value="2868">TK-21: Helal Teknik Komitesi</option>
+				<option value="2568">TK21: Tesisat, Isıtma, Soğutma ve Havalandırma Teknik Komitesi</option>
+				<option value="2572">TK22: Tesisat ve Basın&#231;lı Kaplar Teknik Komitesi</option>
+				<option value="2870">TK-22: Ulaşım ve Taşımacılık Teknik Komitesi</option>
+				<option value="2574">TK23: Metal&#252;rji Teknik Komitesi</option>
+				<option value="2576">TK24: Gıda Teknik Komitesi</option>
+				<option value="2578">TK25: Ziraat Teknik Komitesi</option>
+				<option value="2580">TK26: Kişisel Koruyucu ve Oyun Alanı Donanım Teknik Komitesi</option>
+				<option value="2582">TK27: Yangın Teknik Komitesi</option>
+				<option value="2584">TK28: Ambalaj Teknik Komitesi</option>
+				<option value="2586">TK29: Y&#246;netim Sistemleri Teknik Komitesi</option>
+				<option value="2535">TK3: Elektrik Elektroteknik ve G&#252;venlik Teknik Komitesi</option>
+				<option value="2588">TK30: Enerji ve Enerji Sistemleri Teknik Komitesi</option>
+				<option value="2590">TK31: Orman ve Orman &#220;r&#252;nleri Teknik Komitesi</option>
+				<option value="2592">TK32: Sağlık Teknik Komitesi</option>
+				<option value="2594">TK33: Medikal Teknik Komitesi</option>
+				<option value="2596">TK34: Tekstil Teknik Komitesi</option>
+				<option value="2598">TK35: Elektrik ve Elektronik Yetkili Servisleri Teknik Komitesi</option>
+				<option value="2600">TK36: Milli Savunma Teknik Komitesi</option>
+				<option value="2602">TK37: Helal Teknik Komitesi</option>
+				<option value="2604">TK38: Sosyal Hizmetler Teknik Komitesi</option>
+				<option value="2606">TK39: Mekanik ve Elektromekanik Yetkili Servisleri Teknik Komitesi</option>
+				<option value="2537">TK4: Elektrik &#220;retim,İletim Ve Dağıtım Teknik Komitesi</option>
+				<option value="2625">TK40: Demiryolu Teknik Komitesi</option>
+				<option value="2671">TK41: Uzay ve Havacılık Teknik Komitesi</option>
+				<option value="2742">TK42: N&#252;kleer Teknik Komitesi</option>
+				<option value="2748">TK43: Terc&#252;me-1 Teknik Komitesi</option>
+				<option value="2750">TK44: Terc&#252;me-2 Teknik Komitesi</option>
+				<option value="2771">TK45: İş Sağlığı ve G&#252;venliği Teknik Komitesi</option>
+				<option value="2797">TK46: S&#252;s Bitkileri</option>
+				<option value="2539">TK5: Aydınlatma ve Bina İ&#231;i Tesisleri İle Yardımcı Donanımları Teknik Komitesi</option>
+				<option value="2541">TK6: İletkenler, Kablolar Ve Yalıtım Malzemeleri Teknik Komitesi</option>
+				<option value="2543">TK7: Y&#252;ksek Gerilim Teknikleri ve Yıldırımdan Korunma Sistemleri Teknik Komitesi</option>
+				<option value="2546">TK8: Elektronik Teknik Komitesi</option>
+				<option value="2547">TK9: Sanayi Hizmetleri Teknik Komitesi</option>
+				<option value="2507">TSEK &#214;zel Daimi Komitesi</option>
+				<option value="2508">TSE-Yapılarda Tahribatsız Muayene &#214;zel Daimi Komitesi</option>
+				<option value="2810">Ulaşım ve Lojistik Sistemleri Sekt&#246;r M&#252;d&#252;rl&#252;ğ&#252;</option>
+				<option value="2799">Ulusal Teknik Onay Esas Belirleme Komisyonu</option>
+				<option value="113">Yangın &#214;zel Daimi Komitesi</option>
+				<option value="2503">Yapı Malzemeleri &#214;DK</option>
+				<option value="2721">Yapı malzemeleri sekt&#246;r&#252;</option>
+				<option value="1671">Yetkili Servis Standardları İhtisas Grubu </option>
+				<option value="2803">Y&#246;netim Sistemleri Geliştirme Sekt&#246;r&#252;</option>
+				<option value="117">Ziraat İhtisas Grubu</option>
+
+			</select>
+                </td>
+			<td>
+                    Tercüme Edildiği Standard :
+                </td>
+			<td>
+                    <input name="ctl00$cph1$txtTercumeEdildigiStandard" type="text" id="cph1_txtTercumeEdildigiStandard" style="width:300px;" />
+                </td>
+		</tr>
+		<tr>
+			<td>
+                    <a href="ICSTree.aspx" title="ICS Kodlarına erişmek için tıklayınız">
+                        ICS Kodu :</a>
+                </td>
+			<td>
+                    <input name="ctl00$cph1$txtICSKod" type="text" id="cph1_txtICSKod" style="width:300px;" />
+                </td>
+			<td>
+                    Kabul Tarihi :
+                </td>
+			<td>
+                    <table cellpadding="0px" cellspacing="0px" style="border-style:none;border-collapse:collapse;">
+				<tr>
+					<td style="border-style:none;"><table cellpadding="0px" cellspacing="0px" style="border-style:none;border-collapse:collapse;width:86px;">
+						<tr>
+							<td><input name="ctl00$cph1$ucKabulTar$BasTar" type="text" value="__.__.____" id="cph1_ucKabulTar_BasTar" title=" * Minimum:01.01.1753
+ * Maksimum:31.12.9999" style="width:70px;" /></td><td><img oncontextmenu="return ImgSagTus(&#39;cph1_ucKabulTar_BasTar&#39;)" src="/WebResource.axd?d=KDFIuYLeVz5LJ5pOx6Vx1sF4gXt_fDKspjUpSmGDezV4nFM4CaqWyD_cAyAGWpU7Is8vHkPoWeCYDxocLdOIxII0S6vi10mzOdat7iN8IU_Ml9Qk2vjV-sfCIQIsWlCk0&amp;t=636349516217205376" onclick="TarihSec(this,&#39;cph1_ucKabulTar_BasTar&#39;)" alt="Takvim Göster" style="border-style:none;cursor:hand;" /></td>
+						</tr>
+					</table><span id="cph1_ucKabulTar_BasTar$cv" style="display:none;"></span></td><td style="color:Red;font-size:9px;font-family:Verdana;font-weight:bold;border-style:none;">&#187;</td><td style="border-style:none;"><table cellpadding="0px" cellspacing="0px" style="border-style:none;border-collapse:collapse;width:86px;">
+						<tr>
+							<td><input name="ctl00$cph1$ucKabulTar$BitTar" type="text" value="__.__.____" id="cph1_ucKabulTar_BitTar" title=" * Minimum:01.01.1753
+ * Maksimum:31.12.9999" style="width:70px;" /></td><td><img oncontextmenu="return ImgSagTus(&#39;cph1_ucKabulTar_BitTar&#39;)" src="/WebResource.axd?d=KDFIuYLeVz5LJ5pOx6Vx1sF4gXt_fDKspjUpSmGDezV4nFM4CaqWyD_cAyAGWpU7Is8vHkPoWeCYDxocLdOIxII0S6vi10mzOdat7iN8IU_Ml9Qk2vjV-sfCIQIsWlCk0&amp;t=636349516217205376" onclick="TarihSec(this,&#39;cph1_ucKabulTar_BitTar&#39;)" alt="Takvim Göster" style="border-style:none;cursor:hand;" /></td>
+						</tr>
+					</table><span id="cph1_ucKabulTar_BitTar$cv" style="display:none;"></span></td>
+				</tr>
+			</table>
+                </td>
+		</tr>
+		<tr>
+			<td colspan="4" align="center">
+                    <table id="cph1_rblAramaTipi" style="font-weight:bold;">
+				<tr>
+					<td><input id="cph1_rblAramaTipi_0" type="radio" name="ctl00$cph1$rblAramaTipi" value="Standard" /><label for="cph1_rblAramaTipi_0">Standard</label></td><td><input id="cph1_rblAramaTipi_1" type="radio" name="ctl00$cph1$rblAramaTipi" value="StandardveIsProgrami" /><label for="cph1_rblAramaTipi_1">Standard + İş Programı</label></td><td><input id="cph1_rblAramaTipi_2" type="radio" name="ctl00$cph1$rblAramaTipi" value="IsProgrami" /><label for="cph1_rblAramaTipi_2">İş Programı</label></td>
+				</tr>
+			</table>
+                </td>
+		</tr>
+		<tr>
+			<td colspan="4">
+
+    * Kelimeler arasına + işareti ekleyerek o kelimelerin ayrı ayrı bulunması şartına
+    göre arama yapılabilir.
+Örnek: kablo+elektrik
+
+                </td>
+		</tr>
+		<tr>
+			<td colspan="4" style="text-align: center">
+                    <a id="cph1_lnkAra" class="btn" href="javascript:if(ArgemLinkButtonValidate('cph1_lnkAra')) WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cph1$lnkAra&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"> Ara </a>
+
+                </td>
+		</tr>
+	</table>
+
+
+</div>
+    <table class="cerceve">
+            <tr>
+                <td colspan="4">
+                    ECE R dokümanlarının satışı Türk Standardları Enstitüsü tarafından yapılmamaktadır. ECE R dokümanlarına http://www.unece.org adresi üzerinden ücretsiz olarak erişebilirsiniz.
+                </td>
+            </tr>
+        <tr>
+            <td>
+                <span id="cph1_lblKayitSayisi">Standard Sayısı: 1</span>
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td align="center" colspan="2">
+                <div>
+	<table class="grv" cellspacing="0" rules="all" border="1" id="cph1_grvStandard" style="width:100%;border-collapse:collapse;">
+		<caption>
+			Standardlar
+		</caption><tr class="grvHeaderStyle">
+			<th scope="col">S.No</th><th scope="col">&nbsp;</th><th scope="col">TS No</th><th scope="col" style="white-space:nowrap;">Kabul Tarihi</th><th scope="col">Belge Sayısı</th><th scope="col">&nbsp;</th><th style="text-align:right;"><a id="cph1_grvStandard_grvStandard_Excel" title="Arama sonucunu Excel olarak almak için tıklayınız." href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cph1$grvStandard$ctl01$grvStandard_Excel&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))" style="cursor:hand;"><img alt = 'Arama sonucunu Excel olarak almak için tıklayınız.' src=/WebResource.axd?d=wNm8VpSGB-_MmWoWZHWS31F2m73fyomm9aR35FSL-xekNVPsIJw_3eZ0r-drk6K5kKRKxTgSrjTejMVg426ZSO5bYBh2XFbSe0aXTHI9qjv6ZtShk3bxOui8wEqsSAmHCn10ypVKEYsfVE6rFEvU_w2&t=636349516217205376/></a></th>
+		</tr><tr class="grvRowStyle">
+			<td style="width:30px;">1</td><td style="width:20px;"></td><td style="width:700px;">
+                                <span id="cph1_grvStandard_lblTsNo_0" style="font-weight:bold;">TS EN IEC 60296&nbsp;<font size="1" color="red">(İngilizce Metin)</font>&nbsp;<font size="1" color="blue">(Renkli)</font></span>
+                                <span id="cph1_grvStandard_lblBaslik_0"><br>Akışkanlar-Elektroteknik uygulamalar için - Elektrikli cihazlar için mineral yalıtım yağları<br/><font color=RoyalBlue>94,00 EURO &nbsp;(858,49 TL + %8KDV)</font></span>
+                            </td>
+		</tr>
+	</table>
+</div>
+                <br />
+
+                <br />
+                <div>
+	<table class="grv" cellspacing="0" rules="all" border="1" id="cph1_grvIsProgrami" style="width:100%;border-collapse:collapse;">
+		<caption>
+			İş Programında Olan Standardlar
+		</caption><tr class="grvEmptyDataRowStyle">
+			<td colspan="3">Kayıt yok/No record</td>
+		</tr>
+	</table>
+</div>
+            </td>
+        </tr>
+    </table>
+
+            </td>
+        </tr>
+    </table>
+
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("cph1_ucKabulTar_BasTar$cv"), document.getElementById("cph1_ucKabulTar_BitTar$cv"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var cph1_ucKabulTar_BasTar = document.all ? document.all["cph1_ucKabulTar_BasTar"] : document.getElementById("cph1_ucKabulTar_BasTar");
+cph1_ucKabulTar_BasTar.Maksimum = "31.12.9999";
+cph1_ucKabulTar_BasTar.Minimum = "01.01.1753";
+cph1_ucKabulTar_BasTar.Zorunlu = "false";
+var cph1_ucKabulTar_BasTar$cv = document.all ? document.all["cph1_ucKabulTar_BasTar$cv"] : document.getElementById("cph1_ucKabulTar_BasTar$cv");
+cph1_ucKabulTar_BasTar$cv.controltovalidate = "cph1_ucKabulTar_BasTar";
+cph1_ucKabulTar_BasTar$cv.focusOnError = "t";
+cph1_ucKabulTar_BasTar$cv.display = "None";
+cph1_ucKabulTar_BasTar$cv.evaluationfunction = "CustomValidatorEvaluateIsValid";
+cph1_ucKabulTar_BasTar$cv.clientvalidationfunction = "ArgemTarihKontrol";
+cph1_ucKabulTar_BasTar$cv.validateemptytext = "true";
+var cph1_ucKabulTar_BitTar = document.all ? document.all["cph1_ucKabulTar_BitTar"] : document.getElementById("cph1_ucKabulTar_BitTar");
+cph1_ucKabulTar_BitTar.Maksimum = "31.12.9999";
+cph1_ucKabulTar_BitTar.Minimum = "01.01.1753";
+cph1_ucKabulTar_BitTar.Zorunlu = "false";
+var cph1_ucKabulTar_BitTar$cv = document.all ? document.all["cph1_ucKabulTar_BitTar$cv"] : document.getElementById("cph1_ucKabulTar_BitTar$cv");
+cph1_ucKabulTar_BitTar$cv.controltovalidate = "cph1_ucKabulTar_BitTar";
+cph1_ucKabulTar_BitTar$cv.focusOnError = "t";
+cph1_ucKabulTar_BitTar$cv.display = "None";
+cph1_ucKabulTar_BitTar$cv.evaluationfunction = "CustomValidatorEvaluateIsValid";
+cph1_ucKabulTar_BitTar$cv.clientvalidationfunction = "ArgemTarihKontrol";
+cph1_ucKabulTar_BitTar$cv.validateemptytext = "true";
+var cph1_lnkAra = document.all ? document.all["cph1_lnkAra"] : document.getElementById("cph1_lnkAra");
+cph1_lnkAra.OnayMesaj = "";
+cph1_lnkAra.BeklemeMesaj = "";
+cph1_lnkAra.ProgressBarEnable = "true";
+cph1_lnkAra.CausesValidation = "true";
+cph1_lnkAra.IslemTipi = "Text";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        ArgemTarihInit('cph1_ucKabulTar_BasTar');var ArgemimgEksiURL = '/WebResource.axd?d=b7T6Mo-tMI4y-xynYgQCHtmrfrBaPks3n_jpSNLUYRwk8JnFncKeGCmezp5y4QbERihm_YAnXFA8jrAhn9nh5EjtPl70Adhl6-iE9Znsfjx1JuQZJafEHuBQQMftJbL-09lwvM3JKPAMTMXI-YX3Jw2&t=636349516217205376';var ArgemimgArtiURL = '/WebResource.axd?d=fSeRxS5tZzwepC0p1hhwKQaWEk_-jiZdbm6ZscHYidOPMp7ukCg8JkI0mFB7XULNT5m9eTet9XOmNKmgA-OicUFViedbE8xrPH3uaraqPpZbZ0G43y7yz-xlddqTV5N-ICSXGB2Ch6uHplPvqdfYDA2&t=636349516217205376';var ArgemTarihCSSURL = '<link href="/WebResource.axd?d=IqnT3s4TLu7gCawbAEfpRYDqH-jf7FQK6pdubXj7G26EHfviV-aPRUP6lZhZFLhk3CjwfDtctQKlooO8D-avFmO36RvZKANXC2sL0wDhcf5dKoBhx7t_x8BjrbklwUHk0&t=636349516217205376" rel="stylesheet" type="text/css"/>';
+document.getElementById('cph1_ucKabulTar_BasTar$cv').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('cph1_ucKabulTar_BasTar$cv'));
+}
+ArgemTarihInit('cph1_ucKabulTar_BitTar');
+document.getElementById('cph1_ucKabulTar_BitTar$cv').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('cph1_ucKabulTar_BitTar$cv'));
+}
+var ArgemButonProgressBarMesaj = 'İşleminiz gerçekleştiriliyor. Lütfen bekleyiniz...';var ArgemButonLutfenBekleyiniz = '/WebResource.axd?d=T6JQtLDtnmDi0pPqh3a6RE7BjkWLFpOCQxZ4CMS979s7hh5vaQmWWNdpuyGEpOk2XVgxAeO7Re8EFrj_f-VPh15TWYX0vf__v-yNQjJnAiTBnFHFmORUKuxmlRzuzX_jyN1mAEtEs5atDVQNwLYeIg2&t=636349516217205376';//]]>
+</script>
+</form>
+</body>
+</html>

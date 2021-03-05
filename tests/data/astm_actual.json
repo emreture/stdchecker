@@ -1,0 +1,292 @@
+[
+  {
+    "query": "d92",
+    "error": null,
+    "no": "ASTM D92",
+    "rev": "18",
+    "desc": "Standard Test Method for Flash and Fire Points by Cleveland Open Cup Tester",
+    "body": "astm",
+    "url": "https://www.astm.org/Standards/D92.htm",
+    "id": 0
+  },
+  {
+    "query": "d97",
+    "error": null,
+    "no": "ASTM D97",
+    "rev": "17b",
+    "desc": "Standard Test Method for Pour Point of Petroleum Products",
+    "body": "astm",
+    "url": "https://www.astm.org/Standards/D97.htm",
+    "id": 1
+  },
+  {
+    "query": "d117",
+    "error": null,
+    "no": "ASTM D117",
+    "rev": "10",
+    "desc": "Standard Guide for Sampling, Test Methods, and Specifications for Electrical Insulating Liquids",
+    "body": "astm",
+    "url": "https://www.astm.org/Standards/D117.htm",
+    "id": 2
+  },
+  {
+    "query": "d445",
+    "error": null,
+    "no": "ASTM D445",
+    "rev": "19a",
+    "desc": "Standard Test Method for Kinematic Viscosity of Transparent and Opaque Liquids (and Calculation of Dynamic Viscosity)",
+    "body": "astm",
+    "url": "https://www.astm.org/Standards/D445.htm",
+    "id": 3
+  },
+  {
+    "query": "d446",
+    "error": null,
+    "no": "ASTM D446",
+    "rev": "12",
+    "desc": "Standard Specifications and Operating Instructions for Glass Capillary Kinematic Viscometers",
+    "body": "astm",
+    "url": "https://www.astm.org/Standards/D446.htm",
+    "id": 4
+  },
+  {
+    "query": "d611",
+    "error": null,
+    "no": "ASTM D611",
+    "rev": "12(2016)",
+    "desc": "Standard Test Methods for Aniline Point and Mixed Aniline Point of Petroleum Products and Hydrocarbon Solvents",
+    "body": "astm",
+    "url": "https://www.astm.org/Standards/D611.htm",
+    "id": 5
+  },
+  {
+    "query": "d664",
+    "error": null,
+    "no": "ASTM D664",
+    "rev": "18",
+    "desc": "Standard Test Method for Acid Number of Petroleum Products by Potentiometric Titration",
+    "body": "astm",
+    "url": "https://www.astm.org/Standards/D664.htm",
+    "id": 6
+  },
+  {
+    "query": "d923",
+    "error": null,
+    "no": "ASTM D923",
+    "rev": "15",
+    "desc": "Standard Practices for Sampling Electrical Insulating Liquids",
+    "body": "astm",
+    "url": "https://www.astm.org/Standards/D923.htm",
+    "id": 7
+  },
+  {
+    "query": "d971",
+    "error": null,
+    "no": "ASTM D971",
+    "rev": "20",
+    "desc": "Standard Test Method for Interfacial Tension of Insulating Liquids Against Water by the Ring Method",
+    "body": "astm",
+    "url": "https://www.astm.org/Standards/D971.htm",
+    "id": 8
+  },
+  {
+    "query": "d1169",
+    "error": null,
+    "no": "ASTM D1169",
+    "rev": "19a",
+    "desc": "Standard Test Method for Specific Resistance (Resistivity) of Electrical Insulating Liquids",
+    "body": "astm",
+    "url": "https://www.astm.org/Standards/D1169.htm",
+    "id": 9
+  },
+  {
+    "query": "d1500",
+    "error": null,
+    "no": "ASTM D1500",
+    "rev": "12(2017)",
+    "desc": "Standard Test Method for ASTM Color of Petroleum Products (ASTM Color Scale)",
+    "body": "astm",
+    "url": "https://www.astm.org/Standards/D1500.htm",
+    "id": 10
+  },
+  {
+    "query": "d1524",
+    "error": null,
+    "no": "ASTM D1524",
+    "rev": "15",
+    "desc": "Standard Test Method for Visual Examination of Used Electrical Insulating Liquids in the Field",
+    "body": "astm",
+    "url": "https://www.astm.org/Standards/D1524.htm",
+    "id": 11
+  },
+  {
+    "query": "d1816",
+    "error": null,
+    "no": "ASTM D1816",
+    "rev": "12(2019)",
+    "desc": "Standard Test Method for Dielectric Breakdown Voltage of Insulating Liquids Using VDE Electrodes",
+    "body": "astm",
+    "url": "https://www.astm.org/Standards/D1816.htm",
+    "id": 12
+  },
+  {
+    "query": "d2112",
+    "error": null,
+    "no": "ASTM D2112",
+    "rev": "15",
+    "desc": "Standard Test Method for Oxidation Stability of Inhibited Mineral Insulating Oil by Pressure Vessel",
+    "body": "astm",
+    "url": "https://www.astm.org/Standards/D2112.htm",
+    "id": 13
+  },
+  {
+    "query": "d2144",
+    "error": null,
+    "no": "ASTM D2144",
+    "rev": "07",
+    "desc": "Standard Practices for Examination of Electrical Insulating Oils by Infrared Absorption",
+    "body": "astm",
+    "url": "https://www.astm.org/Standards/D2144.htm",
+    "id": 14
+  },
+  {
+    "query": "d2270",
+    "error": null,
+    "no": "ASTM D2270",
+    "rev": "10(2016)",
+    "desc": "Standard Practice for Calculating Viscosity Index from Kinematic Viscosity at 40 \u00b0C and 100 \u00b0C",
+    "body": "astm",
+    "url": "https://www.astm.org/Standards/D2270.htm",
+    "id": 15
+  },
+  {
+    "query": "d2472",
+    "error": null,
+    "no": "ASTM D2472",
+    "rev": "15",
+    "desc": "Standard Specification for Sulfur Hexafluoride",
+    "body": "astm",
+    "url": "https://www.astm.org/Standards/D2472.htm",
+    "id": 16
+  },
+  {
+    "query": "d2685",
+    "error": null,
+    "no": "ASTM D2685",
+    "rev": "11(2019)",
+    "desc": "Standard Test Method for Air and Carbon Tetrafluoride in Sulfur Hexafluoride by Gas Chromatography",
+    "body": "astm",
+    "url": "https://www.astm.org/Standards/D2685.htm",
+    "id": 17
+  },
+  {
+    "query": "d3455",
+    "error": null,
+    "no": "ASTM D3455",
+    "rev": "11(2019)",
+    "desc": "Standard Test Methods for Compatibility of Construction Material with Electrical Insulating Oil of Petroleum Origin",
+    "body": "astm",
+    "url": "https://www.astm.org/Standards/D3455.htm",
+    "id": 18
+  },
+  {
+    "query": "d3487",
+    "error": null,
+    "no": "ASTM D3487",
+    "rev": "16",
+    "desc": "Standard Specification for Mineral Insulating Oil Used in Electrical Apparatus",
+    "body": "astm",
+    "url": "https://www.astm.org/Standards/D3487.htm",
+    "id": 19
+  },
+  {
+    "query": "d3612",
+    "error": null,
+    "no": "ASTM D3612",
+    "rev": "02(2017)",
+    "desc": "Standard Test Method for Analysis of Gases Dissolved in Electrical Insulating Oil by Gas Chromatography",
+    "body": "astm",
+    "url": "https://www.astm.org/Standards/D3612.htm",
+    "id": 20
+  },
+  {
+    "query": "d4052",
+    "error": null,
+    "no": "ASTM D4052",
+    "rev": "18a",
+    "desc": "Standard Test Method for Density, Relative Density, and API Gravity of Liquids by Digital Density Meter",
+    "body": "astm",
+    "url": "https://www.astm.org/Standards/D4052.htm",
+    "id": 21
+  },
+  {
+    "query": "d4059",
+    "error": null,
+    "no": "ASTM D4059",
+    "rev": "00(2018)",
+    "desc": "Standard Test Method for Analysis of Polychlorinated Biphenyls in Insulating Liquids by Gas Chromatography",
+    "body": "astm",
+    "url": "https://www.astm.org/Standards/D4059.htm",
+    "id": 22
+  },
+  {
+    "query": "d4243",
+    "error": null,
+    "no": "ASTM D4243",
+    "rev": "16",
+    "desc": "Standard Test Method for Measurement of Average Viscometric Degree of Polymerization of New and Aged Electrical Papers and Boards",
+    "body": "astm",
+    "url": "https://www.astm.org/Standards/D4243.htm",
+    "id": 23
+  },
+  {
+    "query": "d4768",
+    "error": null,
+    "no": "ASTM D4768",
+    "rev": "11",
+    "desc": "Standard Test Method for Analysis of 2,6-Ditertiary-Butyl Para-Cresol and 2,6-Ditertiary-Butyl Phenol in Insulating Liquids by Gas Chromatography",
+    "body": "astm",
+    "url": "https://www.astm.org/Standards/D4768.htm",
+    "id": 24
+  },
+  {
+    "query": "d5837",
+    "error": null,
+    "no": "ASTM D5837",
+    "rev": "15",
+    "desc": "Standard Test Method for Furanic Compounds in Electrical Insulating Liquids by High-Performance Liquid Chromatography (HPLC)",
+    "body": "astm",
+    "url": "https://www.astm.org/Standards/D5837.htm",
+    "id": 25
+  },
+  {
+    "query": "d5950",
+    "error": null,
+    "no": "ASTM D5950",
+    "rev": "14(2020)",
+    "desc": "Standard Test Method for Pour Point of Petroleum Products (Automatic Tilt Method)",
+    "body": "astm",
+    "url": "https://www.astm.org/Standards/D5950.htm",
+    "id": 26
+  },
+  {
+    "query": "d6871",
+    "error": null,
+    "no": "ASTM D6871",
+    "rev": "17",
+    "desc": "Standard Specification for Natural (Vegetable Oil) Ester Fluids Used in Electrical Apparatus",
+    "body": "astm",
+    "url": "https://www.astm.org/Standards/D6871.htm",
+    "id": 27
+  },
+  {
+    "query": "d7150",
+    "error": null,
+    "no": "ASTM D7150",
+    "rev": "13",
+    "desc": "Standard Test Method for the Determination of Gassing Characteristics of Insulating Liquids Under Thermal Stress",
+    "body": "astm",
+    "url": "https://www.astm.org/Standards/D7150.htm",
+    "id": 28
+  }
+]

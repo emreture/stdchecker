@@ -1,0 +1,110 @@
+[
+  {
+    "query": "60156",
+    "error": null,
+    "no": "IEC 60156",
+    "rev": "2018 RLV",
+    "desc": "Insulating liquids - Determination of the breakdown voltage at power frequency - Test method",
+    "body": "iec",
+    "url": "https://webstore.iec.ch/publication/63770"
+  },
+  {
+    "query": "60247",
+    "error": null,
+    "no": "IEC 60247",
+    "rev": "2004",
+    "desc": "Insulating liquids - Measurement of relative permittivity, dielectric dissipation factor (tan d) and d.c. resistivity",
+    "body": "iec",
+    "url": "https://webstore.iec.ch/publication/1150"
+  },
+  {
+    "query": "60296",
+    "error": null,
+    "no": "IEC 60296",
+    "rev": "2020",
+    "desc": "Fluids for electrotechnical applications \u2013 Mineral insulating oils for electrical equipment",
+    "body": "iec",
+    "url": "https://webstore.iec.ch/publication/61025"
+  },
+  {
+    "query": "60422",
+    "error": null,
+    "no": "IEC 60422",
+    "rev": "2013",
+    "desc": "Mineral insulating oils in electrical equipment - Supervision and maintenance guidance",
+    "body": "iec",
+    "url": "https://webstore.iec.ch/publication/2110"
+  },
+  {
+    "query": "60599",
+    "error": null,
+    "no": "IEC 60599",
+    "rev": "2015 RLV",
+    "desc": "Mineral oil-filled electrical equipment in service - Guidance on the interpretation of dissolved and free gases analysis",
+    "body": "iec",
+    "url": "https://webstore.iec.ch/publication/23317"
+  },
+  {
+    "query": "60666",
+    "error": null,
+    "no": "IEC 60666",
+    "rev": "2010",
+    "desc": "Detection and determination of specified additives in mineral insulating oils",
+    "body": "iec",
+    "url": "https://webstore.iec.ch/publication/2807"
+  },
+  {
+    "query": "60814",
+    "error": null,
+    "no": "IEC 60814",
+    "rev": "1997",
+    "desc": "Insulating liquids - Oil-impregnated paper and pressboard - Determination of water by automatic coulometric Karl Fischer titration",
+    "body": "iec",
+    "url": "https://webstore.iec.ch/publication/3572"
+  },
+  {
+    "query": "61099",
+    "error": null,
+    "no": "IEC 61099",
+    "rev": "2010",
+    "desc": "Insulating liquids - Specifications for unused synthetic organic esters for electrical purposes",
+    "body": "iec",
+    "url": "https://webstore.iec.ch/publication/4511"
+  },
+  {
+    "query": "61198",
+    "error": null,
+    "no": "IEC 61198",
+    "rev": "1993",
+    "desc": "Mineral insulating oils - Methods for the determination of 2-furfural and related compounds",
+    "body": "iec",
+    "url": "https://webstore.iec.ch/publication/4889"
+  },
+  {
+    "query": "62021-1",
+    "error": null,
+    "no": "IEC 62021-1",
+    "rev": "2003",
+    "desc": "Insulating liquids - Determination of acidity - Part 1: Automatic potentiometric titration",
+    "body": "iec",
+    "url": "https://webstore.iec.ch/publication/6304"
+  },
+  {
+    "query": "62697-1",
+    "error": null,
+    "no": "IEC 62697-1",
+    "rev": "2012",
+    "desc": "Test methods for quantitative determination of corrosive sulfur compounds in unused and used insulating liquids - Part 1: Test method for quantitative determination of dibenzyldisulfide (DBDS)",
+    "body": "iec",
+    "url": "https://webstore.iec.ch/publication/7375"
+  },
+  {
+    "query": "62961",
+    "error": null,
+    "no": "IEC 62961",
+    "rev": "2018",
+    "desc": "Insulating liquids - Test methods for the determination of interfacial tension of insulating liquids - Determination with the ring method",
+    "body": "iec",
+    "url": "https://webstore.iec.ch/publication/27653"
+  }
+]
