@@ -1,13 +1,13 @@
 import setuptools
 
-with open("README", "r") as fh:
+with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
     name="stdchecker",
     version="0.1.0",
     author="Metin Emre TÜRE",
-    author_email="emre@emreture.net.tr",
+    author_email="emreture@gmail.com",
     description="A library for checking the latest revisions of standard methods published by standard bodies.",
     long_description=long_description,
     long_description_content_type="text/markdown",
