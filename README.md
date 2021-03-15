@@ -1,4 +1,6 @@
 # Stdchecker
+[![PyPI](https://img.shields.io/pypi/v/stdchecker)](https://pypi.org/project/stdchecker/)
+
 Stdchecker is a Python library for checking the latest revisions of standard methods published by standard bodies. Supported standard bodies are:
 - ASTM - American Society for Testing and Materials
 - IEC - The International Electrotechnical Commission
