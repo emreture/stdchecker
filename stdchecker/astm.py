@@ -46,10 +46,9 @@ def fetch_astm(query_list):
             html = response.text
             soup = BeautifulSoup(html, "html.parser")
             try:
-                std_name = soup.find("h5", {'itemprop': "name"}).string
-                std_desc = soup.find("h3", {'itemprop': "description"}).text.strip()
-                std_desc = ' '.join(std_desc.split())  # Remove weird multi spaces.
-                std_name_split = std_name.split(" - ")
+                std_name = soup.find("b", {'class': "sku"}).string.replace('\xa0', ' ')
+                std_desc = soup.find("b", {'class': "name"}).text.strip()
+                std_name_split = std_name.split("-")
                 std_number = std_name_split[0]
                 std_rev = std_name_split[1]
             except (AttributeError, IndexError):
