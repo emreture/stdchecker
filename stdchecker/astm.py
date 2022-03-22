@@ -5,6 +5,7 @@ import logging
 import requests
 from collections.abc import Iterable
 from bs4 import BeautifulSoup
+from .constants import USER_AGENT
 
 ASTM_URL = "https://www.astm.org/Standards/{0}.htm"
 log = logging.getLogger(__name__)
@@ -24,6 +25,7 @@ def fetch_astm(query_list):
     if not isinstance(query_list, Iterable):
         raise TypeError(f"Argument must be a string or an iterable object, {query_list.__class__.__name__} given.")
     with requests.Session() as session:
+        session.headers.update({'User-Agent': USER_AGENT})
         for query in query_list:
             query = str(query)
             query_upper = query.upper()

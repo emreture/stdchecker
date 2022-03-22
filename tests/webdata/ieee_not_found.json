@@ -1,1 +1,6 @@
-{"status":"success","code":200,"message":"{\"response\":{}}"}
+{
+  "status": "ok",
+  "total_pages": 0,
+  "html": "<div class=\"no-results-found\">Sorry, but no results were found for your search</div>",
+  "filters_html": ""
+}

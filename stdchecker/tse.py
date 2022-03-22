@@ -6,6 +6,7 @@ import requests
 from datetime import date
 from collections.abc import Iterable
 from bs4 import BeautifulSoup
+from .constants import USER_AGENT
 
 TSE_SEARCH_URL = "https://intweb.tse.org.tr/Standard/Standard/StandardAra.aspx"
 log = logging.getLogger(__name__)
@@ -86,6 +87,7 @@ def fetch_tse(query_list):
     if not isinstance(query_list, Iterable):
         raise TypeError(f"Argument must be a string or an iterable object, {query_list.__class__.__name__} given.")
     with requests.Session() as session:
+        session.headers.update({'User-Agent': USER_AGENT})
         for query in query_list:
             query = str(query)
             found_list = search_tse(query, session)

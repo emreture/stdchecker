@@ -5,6 +5,7 @@ import logging
 import requests
 from collections.abc import Iterable
 from bs4 import BeautifulSoup
+from .constants import USER_AGENT
 
 IEC_SEARCH_URL = "https://webstore.iec.ch/searchkey&key={0}&start=1&MAX=50&FUZZY=0"
 log = logging.getLogger(__name__)
@@ -44,14 +45,6 @@ def search_iec(query_item, session) -> list:
                 if content.name == "a" and content.get("href", "") == "#":
                     continue
                 if content.name == "a" and query_item not in content.string:
-                    # std_name = content.string
-                    # std_name_split = std_name.split(":")
-                    # std_number = std_name_split[0]
-                    # std_rev = ":".join(std_name_split[1:]).strip()
-                    # std_url = content.get("href")
-                    # if std_url:
-                    #     std_url = f"https://webstore.iec.ch{std_url}"
-                    # found = True
                     pass
                 if content.name == "a" and query_item in content.string:
                     std_name = content.string
@@ -89,6 +82,7 @@ def fetch_iec(query_list):
     if not isinstance(query_list, Iterable):
         raise TypeError(f"Argument must be a string or an iterable object, {query_list.__class__.__name__} given.")
     with requests.Session() as session:
+        session.headers.update({'User-Agent': USER_AGENT})
         for query in query_list:
             query = str(query)
             query_upper = query.upper()

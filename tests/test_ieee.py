@@ -9,7 +9,7 @@ MODULE_PATH = os.path.dirname(__file__)
 
 
 class TestCase(unittest.TestCase):
-    @patch.object(Session, "get")
+    @patch.object(Session, "post")
     def test_fetch(self, mock_get):
         with open(os.path.join(MODULE_PATH, "webdata/ieee_search.json"), "r", encoding="utf-8") as f:
             mock_get.return_value.json = lambda: json.load(f)
@@ -23,9 +23,9 @@ class TestCase(unittest.TestCase):
         self.assertEqual("IEEE Guide for the Interpretation of Gases Generated in Mineral Oil-Immersed Transformers",
                          std['desc'])
         self.assertEqual("ieee", std['body'])
-        self.assertEqual("https://standards.ieee.org/content/ieee-standards/en/standard/C57_104-2019.html", std['url'])
+        self.assertEqual("https://standards.ieee.org/ieee/C57.104/7476/", std['url'])
 
-    @patch.object(Session, "get")
+    @patch.object(Session, "post")
     def test_fetch_not_found_error(self, mock_get):
         with open(os.path.join(MODULE_PATH, "webdata/ieee_not_found.json"), "r", encoding="utf-8") as f:
             mock_get.return_value.json = lambda: json.load(f)
@@ -40,7 +40,7 @@ class TestCase(unittest.TestCase):
         self.assertEqual("ieee", std['body'])
         self.assertEqual(None, std['url'])
 
-    @patch.object(Session, "get")
+    @patch.object(Session, "post")
     def test_fetch_connection_error(self, mock_get):
         mock_get.side_effect = ConnectionError("connection error side effect")
         std_list = list(fetch_ieee("C57.104"))
@@ -54,7 +54,7 @@ class TestCase(unittest.TestCase):
         self.assertEqual("ieee", std['body'])
         self.assertEqual(None, std['url'])
 
-    @patch.object(Session, "get")
+    @patch.object(Session, "post")
     def test_fetch_data_parsing_error(self, mock_get):
         mock_get.return_value.json = lambda: json.loads("{}")
         std_list = list(fetch_ieee("C57.104"))

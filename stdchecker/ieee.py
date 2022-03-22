@@ -5,9 +5,9 @@ import logging
 import json
 import requests
 from collections.abc import Iterable
+from .constants import USER_AGENT
 
-IEEE_SEARCH_URL = 'https://standards.ieee.org/bin/standards/search?data={"data":{"searchTerm":"STD","offset":0,' \
-                  '"recordPerPage":50}} '
+IEEE_SEARCH_URL = "https://standards.ieee.org/wp-admin/admin-ajax.php"
 log = logging.getLogger(__name__)
 # log.addHandler(logging.NullHandler()) is not necessary. Parent's handler is already NullHandler.
 
@@ -22,9 +22,14 @@ def search_ieee(query_item, session) -> list:
     """
     found_list = list()
     query_item = str(query_item)
-    url = IEEE_SEARCH_URL.replace("STD", query_item)
+    data = {
+        'action': "ieee_cloudsearch",
+        'q': query_item,
+        'type': "|Standard"
+    }
+    url = IEEE_SEARCH_URL
     try:
-        response = session.get(url, timeout=10)
+        response = session.post(url, data=data, timeout=10)
         response.raise_for_status()
     except requests.RequestException:
         log.exception("Request exception has occurred.")
@@ -32,25 +37,19 @@ def search_ieee(query_item, session) -> list:
                  'body': "ieee", 'url': None}]
     try:
         response_json = response.json()
-        if response_json["code"] == 200:
-            data = json.loads(response_json['message'])
-            # with open(r"t:\ieee.json", "w", encoding="utf-8") as f:
-            #     json.dump(data, f, indent=2)
-            if data['response']:
-                for item in data['response']['searchResults']['resultsMapList']:
-                    std_name = item['record']['recordTitle']
-                    std_name_split = std_name.split(" - ")
-                    std_full_number_split = std_name_split[0].strip().split("-")
-                    if len(std_name_split) > 1:
-                        std_desc = std_name_split[1].strip()
-                    else:
-                        std_desc = ""
-                    std_number = std_full_number_split[0].strip()
-                    if len(std_full_number_split) > 1:
-                        std_rev = "-".join(std_full_number_split[1:]).strip()
-                    else:
-                        std_rev = ""
-                    std_url = item['record']['recordURL']
+        if response_json["status"] == "ok":
+            data = response_json.get("results", None)
+            if data:
+                for item in data['hits']['hit']:
+                    std_name = item['fields']['doc_title_t'][10:]
+                    std_name_split = std_name.split("-")
+                    start_index = item['fields']['doc_text_t'].find("MAC Address")
+                    end_index = item['fields']['doc_text_t'].find("Purchase", start_index)
+                    desc_index = item['fields']['doc_text_t'].find(std_name, start_index) + len(std_name)
+                    std_desc = item['fields']['doc_text_t'][desc_index + 1:end_index - 1]
+                    std_number = std_name_split[0]
+                    std_rev = std_name_split[1]
+                    std_url = item['fields']['doc_id_l']
                     if std_number.startswith("IEEE " + query_item) or std_number.startswith("P" + query_item):
                         if not std_rev and std_number.startswith("P" + query_item):
                             std_rev = "project"
@@ -108,6 +107,7 @@ def fetch_ieee(query_list):
     if not isinstance(query_list, Iterable):
         raise TypeError(f"Argument must be a string or an iterable object, {query_list.__class__.__name__} given.")
     with requests.Session() as session:
+        session.headers.update({'User-Agent': USER_AGENT})
         for query in query_list:
             query = str(query)
             found_list = search_ieee(query, session)
@@ -136,8 +136,6 @@ def check_ieee(fetched: Iterable, actual: list, id_from_actual=False):
     for fetched_item in fetched:
         checked_item = dict(fetched_item)
         fetched_no = fetched_item['no']
-        # fetched_desc = fetched_item['desc']
-        # actual_item = next((i for i in actual if i['no'] == fetched_no and i['desc'] == fetched_desc), None)
         actual_item = next((i for i in actual if i['no'] == fetched_no), None)
         if actual_item:
             fetched_rev = fetched_item['rev']
