@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="stdchecker",
-    version="0.1.4",
+    version="0.1.5",
     author="Metin Emre TÜRE",
     author_email="emreture@gmail.com",
     description="A library for checking the latest revisions of standard methods published by standard bodies.",
