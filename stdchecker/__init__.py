@@ -5,7 +5,7 @@ from stdchecker.tse import fetch_tse, check_tse, check_tse_as_list
 from stdchecker.ieee import fetch_ieee, check_ieee, check_ieee_as_list
 
 __title__ = "stdchecker"
-__version__ = "0.1.4"
+__version__ = "0.1.5"
 __author__ = "Metin Emre TÜRE"
 __email__ = "emreture@gmail.com"
 __license__ = "MIT"
