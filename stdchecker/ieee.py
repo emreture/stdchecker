@@ -44,6 +44,8 @@ def search_ieee(query_item, session) -> list:
                     std_name = item['fields']['doc_title_t'][10:]
                     std_name_split = std_name.split("-")
                     start_index = item['fields']['doc_text_t'].find("MAC Address")
+                    if start_index == -1:
+                        start_index = item['fields']['doc_text_t'].find("MAC ADDRESS")
                     end_index = item['fields']['doc_text_t'].find("Purchase", start_index)
                     desc_index = item['fields']['doc_text_t'].find(std_name, start_index) + len(std_name)
                     std_desc = item['fields']['doc_text_t'][desc_index + 1:end_index - 1]
