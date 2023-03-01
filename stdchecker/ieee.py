@@ -25,7 +25,10 @@ def search_ieee(query_item, session) -> list:
     data = {
         'action': "ieee_cloudsearch",
         'q': query_item,
-        'type': "|Standard"
+        'type': "|Standard",
+        'topic': "",
+        'category': "",
+        'page': ""
     }
     url = IEEE_SEARCH_URL
     try:
@@ -41,6 +44,8 @@ def search_ieee(query_item, session) -> list:
             data = response_json.get("results", None)
             if data:
                 for item in data['hits']['hit']:
+                    if item['fields'].get('doc_title_t') is None:
+                        continue
                     std_name = item['fields']['doc_title_t'][10:]
                     std_name_split = std_name.split("-")
                     start_index = item['fields']['doc_text_t'].find("MAC Address")
